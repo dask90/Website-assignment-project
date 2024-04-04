@@ -1,83 +1,229 @@
-*{padding:0; margin:0; box-sizing: border-box; font-family:sans-serif;}
-header{
-	width: 100vw;
-	min-height: 100vh;
-	background: black;
-	font-size: 1.2rem;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display:flex;
+    justify-content: center;
+    background: blueviolet;
 }
 
-.fl{
-    display: flex;
-    justify-content: space-between;
-}
+/*Mobile responsiveness- media query*/
 
-
-.container{
-	background: whitesmoke;
-	max-width: 600px;
-	min-height: 500px;
-	display: flex;
-	justify-content:space-between;
-	align-items: flex-start;
-	padding: 0.5rem 1.5rem;
+@media screen and (Max-width:425px){
+.wrapper{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 95%;
+    background-color:rgb(247, 226, 245);
 }
-.left{
-	flex-basis: 50%;
-}
-.right{
-	flex-basis: 50%;
+.wrapper h2{
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(8, 8, 172);
+    color: white;
+    font-size: 22px;
 }
 form{
-	padding: 1rem;
+    padding-left: 20px;
+    border: 3px solid rgb(8, 8, 172);
+    margin: 5px;
+    padding-bottom: 10px;
+}
+form h4{
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div input{
+    border-radius: 0.3em;
+    border: 1px solid rgb(167, 160, 160); 
+    padding: 0.6em;
+}
+input.name{
+    border: 1px solid blue;
+    width: 80%;
+    margin-top: 0.4em;
+}
+input.dob{
+    border: 1px solid blue;
+    width: 20%;
+    margin-top: 0 auto 0
+}
+.radio{
+    margin: 0;
+}
+input {
+    width:15%;
+    margin-top: 0.6em;
+
+}
+div h4{
+    padding: 0;
+    margin-bottom: 0.4em;
+}
+div select{
+    padding: 0.6em;
+    width: 40%;
+    border: 1px solid blue;
+    border-radius: 0.3em;
+    margin-top:0.6em;
+}
+div button {
+    margin-top:0.9em;
+    margin-left: 40px;
+    background-color: burlywood;
+    border: 1px solid burlywood;
+    padding: 0.6em 40px;
+    border-radius: 0.3em;
+    border: none;
+    font-weight: 600;
+}
+}
+/*Mobile responsiveness for width between 425 and768px- media query*/
+
+@media screen and (Min-width:426px){
+    .wrapper{
+        display:flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 85%;
+        background-color:rgb(247, 226, 245);
+    }
+    .wrapper h2{
+        text-align: Left;
+        padding: 20px;
+        padding-top: 180px;
+        background-color: rgb(8, 8, 172);
+        color: white;
+        font-size: 30px;
+    }
+    form{
+        padding-left: 20px;
+        border: 3px solid rgb(8, 8, 172);
+        margin: 5px;
+        padding-bottom: 10px;
+    }
+    form h4{
+        font-size: large;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+    div input{
+        border-radius: 0.3em;
+        border: 1px solid rgb(167, 160, 160); 
+        padding: 0.6em;
+    }
+    input.name{
+        border: 1px solid blue;
+        width: 80%;
+        margin-top: 0.4em;
+    }
+    input.dob{
+        border: 1px solid blue;
+        width: 20%;
+        margin-top: 0 auto 0
+    }
+    .radio{
+        margin: 0;
+    }
+    input {
+        width:15%;
+        margin-top: 0.6em;
+
+    }
+    div h4{
+        padding: 0;
+        margin-bottom: 0.4em;
+    }
+    div select{
+        padding: 0.6em;
+        width: 40%;
+        border: 1px solid blue;
+        border-radius: 0.3em;
+        margin-top:0.6em;
+    }
+    div button {
+        margin-top:0.9em;
+        margin-left: 60px;
+        background-color: burlywood;
+        border: 1px solid burlywood;
+        padding: 0.6em 40px;
+        border-radius: 0.3em;
+        border: none;
+        font-weight: 600;
+    }
 }
 
-h3{
-	margin-top: 1rem;
-	color:#2c3e50;
-	}
+/*Mobile responsiveness for width greater than 768px- media query*/
 
-form input[type="text"]{
-	width: 100%;
-	padding: 0.5rem 0.7rem;
-	margin: 0.5rem 0;
-	outline: none;
+@media screen and (Min-width:769px){
+.wrapper{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 60%;
+    background-color:rgb(247, 226, 245);
 }
+.wrapper h2{
+    text-align: Left;
+    padding: 20px;
+    padding-top: 180px;
+    background-color: rgb(8, 8, 172);
+    color: white;
+    font-size: 30px;
+}
+form{
+    padding-left: 20px;
+    border: 3px solid rgb(8, 8, 172);
+    margin: 10px;
+    padding-bottom: 20px;
+}
+form h4{
+    font-size: x-large;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+div input{
+    border-radius: 0.3em;
+    border: 1px solid rgb(167, 160, 160); 
+    padding: 0.6em;
+}
+input.name{
+    border: 1px solid blue;
+    width: 50%;
+    margin-top: 0.9em;
+}
+input.dob{
+    border: 1px solid blue;
+    width: 15%;
+    margin-top: 0 auto 0
+}
+div label{
+   font-size: large;
+}
+.radio{
+    margin: 0;
+}
+input {
+    width:15%;
+    margin-top: 0.9em;
 
-#zip{
-	display: flex;
-	margin-top: 0.5rem;
 }
-#zip select{
-	padding: 0.5rem 0.7rem;
+div h4{
+    padding: 0;
+    margin-bottom: 0.5em;
 }
-#zip input[type="number"]{
-	padding: 0.5rem 0.7rem;
-	margin-left: 5px;	
+div select{
+    padding: 0.6em;
+    width: 20%;
+    border: 1px solid blue;
+    border-radius: 0.3em;
+    margin-top:0.9em;
 }
-input[type="submit"]{
-	width: 100%;
-	padding: 0.7rem 1.5rem;
-	background: #34495e;
-	color: white;
-	border: none;
-	outline: none;
-	margin-top: 1rem;
-	cursor: pointer;
+div button {
+    margin-top:0.9em;
+    margin-left: 140px;
+    background-color: burlywood;
+    border: 1px solid burlywood;
+    padding: 0.6em 40px;
+    border-radius: 0.3em;
+    border: none;
+    font-weight: 600;
 }
-
-input[type="submit"]:hover{
-	background: rgb(7, 109, 177);
-}
-
-
-@media only screen and (max-width: 770px){
-	.container{
-		flex-direction: column;
-	}
-	body{
-		overflow-x: hidden;
-	}
 }
